@@ -1,0 +1,51 @@
+.card {
+  cursor: pointer;
+  text-align: center;
+  max-height: fit-content;
+  max-width: fit-content;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+font-size: 10px;
+}
+.card:hover {
+  box-shadow: 0 0 20px lightgrey;
+  width: 100vw;
+  margin: -12px;
+}
+
+
+.border-b {
+  margin: 4px;
+}
+
+div[id="main-card"] {
+  box-shadow: 0 2px 12px black;
+  animation: hover-out 2s forwards;
+  transition: transform 2s;
+  width: 220px;
+}
+
+div[id="main-card"]:hover {
+  box-shadow: 10px 1px 12px rgb(29, 2, 51);
+  animation: hover-in 2s forwards;
+  transform: scale(1.1);
+
+}
+
+
+@keyframes hover-in {
+  from{ box-shadow: 0 2px 12px rgb(29, 2, 51);;
+  }
+  to {box-shadow: -30px 5px 24px rgb(29, 2, 51) ;}
+}
+
+@keyframes hover-out {
+  from{
+      box-shadow: -30px 5px 24px rgb(29, 2, 51);
+  }
+  to{
+      box-shadow: 0 2px 12px rgb(29, 2, 51);
+  }
+}
