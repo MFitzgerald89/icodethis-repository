@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -5,22 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="bg-slate-900 flex">
+<body class="bg-neutral-900 flex">
 
-    <nav class="bg-slate-900 mt-16 ml-12 p-4 text-xs">
+    <nav class="bg-neutral-900 mt-14 ml-[50px] p-4 text-[9px]">
         <div class="container mx-auto">
-                <ul class="flex space-x-4 md:space-x-8 lg:space-x-12">
-                    <li><a href="#" class="home text-white ">Home</a></li>
-                    <li><a href="#" class="apps text-white ">Apps</a></li>
-                    <li><a href="#" class="account text-white ">Account</a></li>
-                    <li><a href="#" class="categories text-white ">Categories</a></li>
-                </ul>
-            </div>
+            <ul class="flex space-x-4 md:space-x-7 lg:space-x-12 uppercase text-neutral-500">
+                <li><a href="#" class="home hover:underline hover:underline-offset-[12px]">Home</a></li>
+                <li><a href="#" class="apps hover:underline hover:underline-offset-[12px]">Apps</a></li>
+                <li><a href="#" class="account hover:underline hover:underline-offset-[12px]">Account</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn uppercase">Categories
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="#">Games</a>
+                    <a href="#">Books</a>
+                    <a href="#">Videos</a>
+                </div>
+                </div></li>
+                <li><i class="fa-solid fa-magnifying-glass text-white"></i></li>
+            </ul>
         </div>
     </nav>
-    <main class="bg-white h-32 w-32 items-center justify-center translate-y-1/2 translate-x-1/2"></main>
+    <main
+        class="bg-neutral-800 absolute h-5/6 w-full justify-start mt-[96px] pl-[66px] pt-4 text-[18px] text-white font-extralight tracking-wide">
+        Recommended for you
+        <div class="text-white text-[10px]">Based on your installs</div>
+        </main>
 
 </body>
 
