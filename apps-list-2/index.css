@@ -36,9 +36,23 @@
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
+  animation: fade-n-grow 1s forwards;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:flex;
+  animation: fade-n-grow 1s forwards;
+}
+
+@keyframes fade-n-grow {
+  from {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+    border-radius: 50%;
+  }
 }

@@ -11,24 +11,23 @@
 
 <body class="bg-neutral-900 flex">
 
-    <nav class="bg-neutral-900 mt-14 ml-[50px] p-4 text-[9px]">
+    <nav class="bg-neutral-900 mt-14 ml-[50px] p-4 text-[10px] font-thin">
         <div class="container mx-auto">
-            <ul class="flex space-x-4 md:space-x-7 lg:space-x-12 uppercase text-neutral-500">
-                <li><a href="#" class="home hover:underline hover:underline-offset-[12px]">Home</a></li>
-                <li><a href="#" class="apps hover:underline hover:underline-offset-[12px]">Apps</a></li>
-                <li><a href="#" class="account hover:underline hover:underline-offset-[12px]">Account</a></li>
+            <ul class="flex space-x-4 md:space-x-7 lg:space-x-12 uppercase text-neutral-400">
+                <li><a href="#" id="home" class="home hover:underline hover:underline-offset-[12px] hover:text-teal-300">Home</a></li>
+                <li><a href="#" class="apps hover:underline hover:underline-offset-[12px] hover:text-teal-300">Apps</a></li>
+                <li><a href="#" class="account hover:underline hover:underline-offset-[12px] hover:text-teal-300">Account</a></li>
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn uppercase">Categories
+                        <button class="dropbtn uppercase hover:text-teal-300 hover:scale-[1.5] hover:px-4 hover:pb-2">Categories
                       <i class="fa fa-caret-down"></i>
                     </button>
                 <div class="dropdown-content">
-                    <a href="#">Games</a>
-                    <a href="#">Books</a>
-                    <a href="#">Videos</a>
+                    <a href="#" class="border border-teal-300 overflow-hidden hover:bg-transparent">Games</a>
+                    <a href="#" class="border border-black">Books</a>
+                    <a href="#" class="border border-black">Videos</a>
                 </div>
                 </div></li>
-                <li><i class="fa-solid fa-magnifying-glass text-white"></i></li>
             </ul>
         </div>
     </nav>
