@@ -36,23 +36,41 @@
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
-  animation: fade-n-grow 1s forwards;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
   display:flex;
   animation: fade-n-grow 1s forwards;
+
+}
+
+button.dropbtn:hover {
+  animation: fade-n-grow 2s forwards;
+}
+
+.home:hover{
+  animation: fade-n-grow 1s forwards;
+}
+
+.apps:hover{
+  animation: fade-n-grow 1s forwards;
+}
+
+.dropdown-content a.books:hover {
+animation: fade-n-grow 1s forwards;
 }
 
 @keyframes fade-n-grow {
   from {
-    opacity: 0.5;
+    opacity: 0.1;
     transform: scale(1);
+    font-size: xx-small;
   }
   to {
     opacity: 1;
-    transform: scale(1.2);
-    border-radius: 50%;
+    transform: scale(1.3);
+    border-radius: 1em;
+    font-size: large;
   }
 }
