@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,31 +12,54 @@
 
 <body class="bg-neutral-900 flex">
 
-    <nav class="bg-neutral-900 mt-14 ml-[50px] p-4 text-[10px] font-thin">
-        <div class="container mx-auto">
+    <nav class="bg-neutral-900 mt-14 ml-[50px] p-4 text-[10px] font-thin d-flex justify-content-between">
+        <div class="md:container md:mx-auto">
             <ul class="flex space-x-4 md:space-x-7 lg:space-x-12 uppercase text-neutral-400">
-                <li><a href="#" id="home" class="home hover:underline hover:underline-offset-[12px] hover:text-teal-300">Home</a></li>
-                <li><a href="#" class="apps hover:underline hover:underline-offset-[12px] hover:text-teal-300">Apps</a></li>
-                <li><a href="#" class="account hover:underline hover:underline-offset-[12px] hover:text-teal-300">Account</a></li>
+                <li>
+                    <a href="#" id="home" class="home hover:underline hover:underline-offset-[12px] hover:text-teal-300">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="apps hover:underline hover:underline-offset-[12px] hover:text-teal-300">Apps</a>
+                </li>
+                <li>
+                    <a href="#" class="account hover:underline hover:underline-offset-[12px] hover:text-teal-300">Account</a>
+                </li>
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn uppercase hover:text-teal-300 hover:scale-[1.5] hover:px-4 hover:pb-2">Categories
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                <div class="dropdown-content">
-                    <a href="#" class="">&#127918;</a>
-                    <a href="#" class="books">&#x1F4D6;</a>
-                    <a href="#" class="">&#127902;</a>
-                </div>
-                </div></li>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content">
+                                <a href="#" class="">&#127918;</a>
+                                <a href="#" class="books">&#x1F4D6;</a>
+                                <a href="#" class="">&#127902;</a>
+                            </div>
+                    </div>
+                    <li>
+                    <button class="btn btn-link ml-[395px] text-xs text-neutral-400" onClick="window.location.href='https://cdn.mos.cms.futurecdn.net/DG9BSbbJYEm5NuQMt7hPp4-970-80.gif'">
+                            <i class="fa fa-search fa-lg"></i>
+                    </li>
+                </li>
             </ul>
         </div>
     </nav>
-    <main
-        class="bg-neutral-800 absolute h-5/6 w-full justify-start mt-[96px] pl-[66px] pt-4 text-[18px] text-white font-extralight tracking-wide">
+    
+<main class="bg-neutral-800 absolute h-5/6 w-full justify-start mt-[96px] pl-[66px] pt-4 text-[18px] text-white font-extralight tracking-wide">
         Recommended for you
-        <div class="text-white text-[10px]">Based on your installs</div>
-        </main>
+    <div class="text-white text-[10px]">Based on your installs</div>
+
+    <div class="grid grid-rows-3 grid col-span-3 grid-flow-col gap-4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+
+</main>
 
 </body>
 
