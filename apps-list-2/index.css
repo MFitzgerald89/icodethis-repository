@@ -76,3 +76,31 @@ button.dropbtn:hover {
   }
 }
 
+.rating {
+    display: inline-flex;
+
+    
+}
+
+.star, .blank-star {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    margin-right: 2px;
+}
+
+.star {
+    background-image: url('https://png2.cleanpng.com/sh/531d51ecd06600ae0c49ba46b2488f35/L0KzQYm3UsA4N6p5j5H0aYP2gLBuTgN1aaMye95ycD3kgsW0kCRiel5ohNt5YYL3g377kvFve6Fmitd3dD24cYjpUfZnPmY9ftRuOD65QYOBUsA0P2I6Sao5MUi4RYG6VsQ2NqFzf3==/kisspng-star-clip-art-star-cliparts-transparent-5a7b1ff658fbe8.6128203715180185503645.png');
+}
+
+.blank-star {
+    background-image: url('https://cdn.icon-icons.com/icons2/2406/PNG/512/star_empty_rating_icon_145932.png');
+}
+
+.app-list {
+  width: 75%;
+  height: 80px;
+  box-shadow: 0 0 12px black;
+}
+
