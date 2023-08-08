@@ -99,10 +99,9 @@ button.dropbtn:hover {
 }
 
 .app-list {
-  width: 220px;
-  height: 90px;
+  width: 240px;
+  height: 100px;
   box-shadow: 0 0 12px rgb(20, 19, 19);
-  cursor: pointer;
 }
 
 .app-list:hover {
@@ -111,13 +110,9 @@ button.dropbtn:hover {
 
 @keyframes apps {
   from {
-    width: 220px;
-  height: 90px;
   box-shadow: 0 0 12px black
   }
   to {
-    width: 230px;
-  height: 95px;
   box-shadow: 0 0 20px black
   }
 }

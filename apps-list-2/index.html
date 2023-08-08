@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="scripts.js"></script>
@@ -17,26 +17,29 @@
         <div class="md:container md:mx-auto">
             <ul class="flex space-x-4 md:space-x-7 lg:space-x-12 uppercase text-neutral-400">
                 <li>
-                    <a href="#" id="home" class="home hover:underline hover:underline-offset-[12px] hover:text-teal-300">Home</a>
+                    <a href="#" id="home"
+                        class="home hover:underline hover:underline-offset-[12px] hover:text-teal-300">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="apps hover:underline hover:underline-offset-[12px] hover:text-teal-300">Apps</a>
+                    <a href="apps"
+                        class="active apps hover:underline hover:underline-offset-[12px] hover:text-teal-300">Apps</a>
                 </li>
                 <li>
-                    <a href="#" class="account hover:underline hover:underline-offset-[12px] hover:text-teal-300">Account</a>
+                    <a href="#"
+                        class="account hover:underline hover:underline-offset-[12px] hover:text-teal-300">Account</a>
                 </li>
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn uppercase hover:text-teal-300 hover:scale-[1.5] hover:px-4 hover:pb-2">Categories
                             <i class="fa fa-caret-down"></i>
                         </button>
-                            <div class="dropdown-content">
-                                <a href="#" class="">&#127918;</a>
-                                <a href="#" class="books">&#x1F4D6;</a>
-                                <a href="#" class="">&#127902;</a>
-                            </div>
+                        <div class="dropdown-content">
+                            <a href="#" class="">&#127918;</a>
+                            <a href="#" class="books">&#x1F4D6;</a>
+                            <a href="#" class="">&#127902;</a>
+                        </div>
                     </div>
-                    <li>
+                <li>
                     <button class="btn btn-link ml-[395px] text-xs text-neutral-400" onClick="window.location.href='https://cdn.mos.cms.futurecdn.net/DG9BSbbJYEm5NuQMt7hPp4-970-80.gif'">
                             <i class="fa fa-search fa-lg"></i>
                     </li>
@@ -49,79 +52,91 @@
         Recommended for you
     <div class="text-white text-[10px]">Based on your installs</div>
 
-    <div class="grid grid-rows-3 grid col-span-3 grid-flow-col gap-none">
-        <div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
+    <div id="pageList" class=" appGrid grid grid-rows-3 grid col-span-3 grid-flow-col -gap-10 ml-6">
+        <div class="app-list mt-6 flex items-center border-radius-4 rounded">
+            <img class="image h-2/3 w-1/4 m-4 rounded" src="https://assets.materialup.com/uploads/e1df75d8-a457-4cff-a3b0-3399dc3d4e13/preview" alt="App Icon">
             <div class="flex flex-col">
-            <p class="name text-xs font-medium" id="pageName"></p>
-            <p class="company text-xs" id="pageCompany"></p>
-            <p class="rating" id="pageRating"></p>
-            <button class="uppercase text-[8px] h-6 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</button>
+            <p class="name text-[6px] font-medium" id="pageName">30 Day Fit Challenge Workout</p>
+            <p class="company text-[6px]" id="pageCompany">NorthPark Android</p>
+            <p class="rating mr-4" id="pageRating"></p>
+            <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
+        </div>
+        </div>
+        <div class="app-list mt-6 flex items-center border-radius-4 rounded">
+            <img class="image h-2/3 w-1/4 m-4 rounded" src="https://scontent.fagc3-2.fna.fbcdn.net/v/t39.30808-6/352811051_790017789398319_8739933951797858409_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WekC0Lgm9l0AX9Oy_6g&_nc_ht=scontent.fagc3-2.fna&oh=00_AfDZV8hjyXvCdWB6LL8yAW1oCZrAwJg5T5nxsenhN3OYAA&oe=64D72F97" alt="App Icon">
+            <div class="flex flex-col">
+                <p class="name text-[6px] font-medium" id="pageName">Sandstorm: Pirate Wars</p>
+                <p class="company text-[6px]" id="pageCompany">Ubisoft Entertainment</p>
+                <p class="rating" id="pageRating"></p>
+                <button class="uppercase text-[8px] h-6 w-[75px] rounded-t border-b border-teal-300 bg-neutral-900">Install App</a>
             </div>
         </div>
         <div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
+            <img class="image h-2/3 w-1/4 m-4 rounded" src="https://play-lh.googleusercontent.com/44id6NyXipQ_H9H2bwFT5ScalHKwfU1OJc_4osf_pjqImnY2kZnKGSKMUCYxUlh2T5Ww=w240-h480-rw" alt="App Icon">
             <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
+                <p class="name text-[6px] font-medium" id="pageName">Qatar Airways</p>
+                <p class="company text-[6px]" id="pageCompany">Qatar Airways</p>
                 <p class="rating" id="pageRating"></p>
+                <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
             </div>
         </div>
         <div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
+            <img class="image h-16 m-4 bg-black rounded" src="https://purepng.com/public/uploads/large/purepng.com-s-health-icon-galaxy-s6symbolsiconssamsungapp-iconsgalaxy-s6-icons-721522597469oeqmy.png"App Icon">
             <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
+                <p class="name text-[6px] font-medium" id="pageName">S Health</p>
+                <p class="company text-[6px]" id="pageCompany">S HealthSamsung Electronics Co.</p>
                 <p class="rating" id="pageRating"></p>
+                <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
             </div>
         </div>
         <div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
+            <img class="image h-16 m-4 rounded" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="App Icon">
             <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
+                <p class="name text-[6px] font-medium" id="pageName">Netflix</p>
+                <p class="company text-[6px]" id="pageCompany">Netflix, Inc.</p>
                 <p class="rating" id="pageRating"></p>
+                <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
             </div>
         </div>
         <div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
+            <img class="image h-16 m-4 rounded" src="https://icons.iconarchive.com/icons/carlosjj/microsoft-office-2013/256/Word-icon.png" alt="App Icon">
             <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
+                <p class="name text-[6px] font-medium" id="pageName">Microsoft Word</p>
+                <p class="company text-[6px]" id="pageCompany">Microsoft Corporation</p>
                 <p class="rating" id="pageRating"></p>
-            </div>
-        </div><div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
-            <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
-                <p class="rating" id="pageRating"></p>
-            </div>
-        </div><div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
-            <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
-                <p class="rating" id="pageRating"></p>
-            </div>
-        </div><div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
-            <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
-                <p class="rating" id="pageRating"></p>
-            </div>
-        </div><div class="app-list mt-6 flex items-center rounded">
-            <img class="image h-16 m-4" src="https://w7.pngwing.com/pngs/153/31/png-transparent-netflix-macos-bigsur-icon-thumbnail.png" alt="App Icon">
-            <div class="flex flex-col">
-                <p class="name text-xs font-medium" id="pageName"></p>
-                <p class="company text-xs" id="pageCompany"></p>
-                <p class="rating" id="pageRating"></p>
+                <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
             </div>
         </div>
-    </div>
+        <div class="app-list mt-6 flex items-center rounded">
+            <img class="image h-16 m-4 bg-black rounded" src="https://www.androidheadlines.com/wp-content/uploads/2016/06/Crab-War-icon.webp" alt="App Icon">
+            <div class="flex flex-col">
+                <p class="name text-[6px] font-medium" id="pageName">Crab War</p>
+                <p class="company text-[6px]" id="pageCompany">Appxplore Sdn Bhd</p>
+                <p class="rating" id="pageRating"></p>
+                <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
+            </div>
+        </div>
+        <div class="app-list mt-6 flex items-center rounded">
+            <img class="image h-16 m-4 bg-black rounded" src="https://image.winudf.com/v2/image/Y29tLmhvbGEuc2NlbmUzZC5zaHVpbXVfaWNvbl9wbTFjZXh1dQ/icon.png?w=&fakeurl=1" alt="App Icon">
+            <div class="flex flex-col">
+                <p class="name text-[6px] font-medium" id="pageName">Jellyfish Hola 3D Theme</p>
+                <p class="company text-[6px]" id="pageCompany">Holaverse</p>
+                <p class="rating" id="pageRating"></p>
+                <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
+            </div>
+        </div>
+        <div class="app-list mt-6 flex items-center rounded">
+            <img class="image h-16 m-4" src="https://data.apkshub.com/49/com.halfbrick.fruitninjafree/2.3.9/icon.png" alt="App Icon">
+            <div class="flex flex-col">
+                <p class="name text-[6px] font-medium" id="pageName">Fruit Ninja Free</p>
+                <p class="company text-[6px]" id="pageCompany">Halfbrick Studios</p>
+                <p class="rating" id="pageRating"></p>
+                <a href="" class="uppercase text-[8px] h-6 w-[75px] py-[6px] px-2 rounded-t mt-2 border-b border-teal-300 bg-neutral-900">Install App</a>
+            </div>
+        </div>
+        </div>
 
-</main>
+        </main>
 
 </body>
 
